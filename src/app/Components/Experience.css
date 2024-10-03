@@ -1,0 +1,30 @@
+:root{
+    --primary:#bf42f5;
+}
+.exp-comp-name h1{
+    position: relative;
+    display: inline-block;
+}
+.exp-comp-name h1::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    bottom: 0;
+    left: 0;
+    transition: width .5s ease-in-out;
+}
+
+.exp-comp-name h1:hover::after{
+    width: 100%;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .exp-cont{
+        display: flex;
+        flex-direction: column;
+    }
+}

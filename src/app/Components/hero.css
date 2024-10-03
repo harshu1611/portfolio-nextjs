@@ -1,0 +1,45 @@
+:root{
+    --light-purple: #f8f0fc;
+    --primary:#bf42f5;
+}
+
+.hero-main{
+    padding: 15px;
+    margin-top: 20px;
+    width: 100%;
+    /* background-color: var(--light-purple); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-texts h1{
+    font-size: 42px ;
+}
+.hero-img {
+    background-color: var(--primary);
+}
+
+@media screen and (max-width:600px) {
+    .hero-main{
+        flex-direction: column;
+    }
+    .hero-texts h1{
+        font-size: 26px;
+    }
+    .hero-img{
+        align-self: center;
+        height: 170px;
+        margin-top: 30px;
+        /* border-radius: 100%; */
+        width: 170px;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile{
+        height: 170px;
+        width: 150px;
+        margin-top: 0px;
+}
+
+}
