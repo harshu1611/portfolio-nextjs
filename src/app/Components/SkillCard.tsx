@@ -15,15 +15,10 @@ export default function SkillCard({ image, name,desc }: props) {
   return (
     <motion.div
       className='p-4 shadow-2xl shadow-primary flex flex-col items-center justify-center w-auto hover:shadow-md hover:shadow-primary'
-      whileHover={{ rotateY: 180, transition:{duration:0.5}}}
+      whileHover={{transition:{duration:1}}}
       onHoverStart={() => setShowText(true)}
       onHoverEnd={() => setShowText(false)}
-      animate={{
-        rotateY: 0,
-        transition: {
-          duration: 0.5, 
-        }
-      }}
+  
       exit={{ transition: { duration: 1 } }}
     >
       {
@@ -33,7 +28,7 @@ export default function SkillCard({ image, name,desc }: props) {
             <h1 className='font-poppinsMedium mt-1'>{name}</h1>
           </>
         ) : (
-          <motion.div animate={{rotateY:-180,transition:{duration:0.5}}}>
+          <motion.div animate={{transition:{duration:1}}} initial={{scale:0.7}} whileInView={{scale:1}}>
                 <p className='font-poppinsMedium'>{desc}</p>
             </motion.div>
         )

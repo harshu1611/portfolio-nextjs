@@ -11,6 +11,7 @@ import Projects from "./Components/Projects";
 import Welcome from "./Components/Welcome";
 import { motion } from "framer-motion"
 import Contact from "./Components/Contact";
+import Head from "next/head";
 
 
 export default function Home() {
@@ -25,6 +26,9 @@ export default function Home() {
   
   return (
     <motion.div className="h-full dark:bg-black bg-[#f8f0fc] " >
+      <Head>
+        <title>Welcome to my portfolio</title>
+      </Head>
       {
         !mount ?
 

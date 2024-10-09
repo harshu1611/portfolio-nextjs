@@ -20,7 +20,7 @@ export default function Projects() {
       </div>
       <motion.div  className="skills-cont p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full h-fit rounded-lg" initial={{x:'-100%'}} whileInView={{x:0}} transition={{duration:1}}>
         {projects.map((data:any)=>(
-            <ProjectCard image={data.image} name={data.name} desc={data.desc} stack={data.stack}/>
+            <ProjectCard image={data.image} name={data.name} desc={data.desc} stack={data.stack} live={data.live} github={data.github}/>
         ))}
       </motion.div>
     </motion.div>

@@ -8,7 +8,12 @@ export default function ExperienceCard1({company,title,desc,image,link,duration,
   return (
     <motion.div  className="experience-card p-5 w-full  border-l-4 border-b-4 border-solid border-primary" initial={{x:'-100%'}} whileInView={{x:0}} transition={{duration:0.5}} animate={{}} viewport={{once:true}}>
             <div className="exp-cont flex flex-row justify-between items-center w-full gap-6">
-                <Image src={image} alt="" width={150} height={150} className='rounded-xl'/>
+                <a href={link} target='_blank'>
+                    <motion.div whileHover={{scale:1.1}}>
+                    <Image src={image} alt="" width={150} height={150} className='rounded-xl'/>
+                    </motion.div>
+                </a>
+               
                 <div className='flex flex-col w-full items-start gap-2'>
                     <div className='exp-comp-name font-extrabold font-poppinsMedium text-2xl '>
                         <h1 className='cursor-pointer  hover:text-primary transition-all'>
@@ -40,7 +45,11 @@ export function ExperienceCard2({company,title,desc,image,link,duration,location
                       <div className='font-bold font-poppins self-end'>{duration} - {location}</div>
                       <div className='font-poppinsMedium text-justify'>{desc}</div>
                   </div>
-                  <Image src={image} alt="" width={150} height={150} className='rounded-xl'/>
+                  <a href={link} target='_blank'>
+                    <motion.div whileHover={{scale:1.1}}>
+                    <Image src={image} alt="" width={150} height={150} className='rounded-xl'/>
+                    </motion.div>
+                </a>
               </div>
         
         </motion.div>
