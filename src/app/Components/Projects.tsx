@@ -12,7 +12,7 @@ import { projects } from "../data";
 
 export default function Projects() {
   return (
-    <motion.div className="mt-10 p-5" initial={{x:'-100%'}} whileInView={{x:0}}transition={{duration:1}}>
+    <motion.div className="mt-10 p-5" initial={{x:'-100%'}} whileInView={{x:0}}transition={{duration:1}} id="projects">
         <div className="title mb-8 w-full text-center">
         <h1 className="font-poppinsMedium text-primary text-4xl decoration">
           Projects

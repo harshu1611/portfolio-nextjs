@@ -39,9 +39,7 @@ export default function ProjectCard({ image, name, desc, stack,github,live }: pr
             stack.map((item) => (
               skills.map((item2: any) => (
                 item === item2.name && (
-                  <motion.div animate={{ scale: [1.01, 0.95, 1.01] }} transition={{ duration: 2, times: [0.25, 0.5, 0.75, 1], repeat: Infinity, ease: 'easeInOut' }} className='flex flex-col items-center justify-center'>
-                    {/* <Image src={'/images/profile.png'} alt='' height={30} width={30}></Image>
-                       */}
+                  <motion.div animate={{ scale: [1.01, 0.95, 1.01] }} transition={{ duration: 2, times: [0.25, 0.5, 0.75, 1], repeat: Infinity, ease: 'easeInOut' }} className='flex flex-col justify-start text-center'>
                     <StackIcon name={item2.image} style={{ height: 30 }} />
                     <p>{item}</p>
                   </motion.div>
