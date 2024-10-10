@@ -111,15 +111,5 @@ export const experience=[
         duration:"May 2023-July 2023",
         location:"New Delhi (Remote)"
 
-    },
-    {
-        company:"Sortin",
-        title: "Software Engineering Intern",
-        desc:"During my Software Engineering Internship at Sortin – Circec Solutions Pvt. Ltd. in Gurgaon, India (May 2024 - July 2024), I collaborated on the development of a web-based NPM package using React and Supabase, leveraging browser Post Messages for enhanced client-server interaction and performance. I also maintained an Android application built with Ionic and Capacitor. Additionally, I led the creation of CI/CD pipelines for Android apps using GitHub Actions, significantly reducing build times by 40% and improving development productivity. Furthermore, I developed a custom plugin for WordPress eCommerce websites using JavaScript.",
-        image:"/images/sortin_logo.jpeg",
-        link:'https://www.linkedin.com/company/sortin/posts/?feedView=all',
-        duration:"May 2024-July 2024",
-        location:"Gurgaon, India"
-
-    },
+    }
 ]
