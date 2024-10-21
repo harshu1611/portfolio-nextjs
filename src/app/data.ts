@@ -1,3 +1,5 @@
+import { desc } from "framer-motion/client"
+
 export const skills=[
     {
         name:"Javascript",
@@ -54,9 +56,22 @@ export const skills=[
         image:"ionic",
         desc: "Ionic is a framework for building cross-platform mobile apps using web technologies like HTML, CSS, and JavaScript."
     },
+    {
+        name:"Firebase",
+        image:"firebase",
+        desc:"Firebase is a backend-as-a-service platform developed by Google."
+    }
 ]
 
+
 export const projects=[
+    {
+        name:"Trippify- AI Travel Planner",
+        desc:'An AI powered trip planning application which uses Gemini API and Google Maps to fetch images and generate AI powered content. Select Travellers, budget types, and dates and get a personalised trip planned.',
+        stack: ['Javascript','React Native','Expo','Firebase'],
+        image:'/images/trippify.png',
+        github:'https://github.com/harshu1611/AI-Travel-Planner-App'
+    },
     {
         name:"E Commerce Website",
         desc:'A dynamic eCommerce platform featuring a seamless user experience for browsing and purchasing products.Integrated Razorpay for secure and efficient payment processing, ensuring smooth transactions. Implemented data caching strategies to enhance website performance and reduce server load.',
