@@ -1,5 +1,9 @@
 import { desc } from "framer-motion/client"
 
+/*
+refer to https://www.tech-stack-icons.com/ for icons and names
+*/
+
 export const skills=[
     {
         name:"Javascript",
@@ -68,7 +72,8 @@ export const projects=[
     {
         name:"Trippify- AI Travel Planner",
         desc:'An AI powered trip planning application which uses Gemini API and Google Maps to fetch images and generate AI powered content. Select Travellers, budget types, and dates and get a personalised trip planned.',
-        stack: ['Javascript','React Native','Expo','Firebase'],
+        stack: ['Javascript','React Native','Firebase'],
+        stackImages:['js','reactjs','firebase'],
         image:'/images/trippify.png',
         github:'https://github.com/harshu1611/AI-Travel-Planner-App'
     },
@@ -76,6 +81,7 @@ export const projects=[
         name:"E Commerce Website",
         desc:'A dynamic eCommerce platform featuring a seamless user experience for browsing and purchasing products.Integrated Razorpay for secure and efficient payment processing, ensuring smooth transactions. Implemented data caching strategies to enhance website performance and reduce server load.',
         stack: ['React.js','Typescript','Node.js','Redux','MongoDb'],
+        stackImages:['reactjs','typescript','nodejs','redux','mongodb'],
         image:'/images/ecomm.png',
         live:'https://ecommerce-frontend-self.vercel.app/',
         github:'https://github.com/harshu1611/Ecommerce'
@@ -84,6 +90,8 @@ export const projects=[
         name:"Inventory Management App (Android)",
         desc:'An inventory management tool using React.js, Ionic, Capacitor, and Supabase for android, featuring real time stock management for both shop and godown, user authentication for enhanced security, and a dedicated section highlighting low stock items',
         stack: ['Ionic Framework','React.js','Supabase'],
+        stackImages:['ionic','reactjs','supabase'],
+
         image:'',
         live:'https://drive.google.com/file/d/1z47n_NhHlFt7gU_tE5L-KuWbtN5ZuMwj/view?usp=drive_link',
         github:'https://github.com/harshu1611/polyglass-app'
@@ -91,7 +99,9 @@ export const projects=[
     {
         name:"Plan My Day (Android)",
         desc:'An Android to-do application for efficient task management, featuring task completion and deletion. Implemented robust user authentication, including login, OTP registration, profile photo integration, and password reset functionality to ensure a secure and personalized user experience.',
-        stack: ['React Native','Node.js','MongoDb', 'Express.js'],
+        stack: ['React Native','Node.js','MongoDb'],
+        stackImages:['reactjs','nodejs','mongodb'],
+
         image:'',
         live:'https://drive.google.com/file/d/18MzCIOdoZLMZEotyhORLqaTgM2oMqwn2/view?usp=sharing',
         github:'https://github.com/harshu1611/Plan-My-Day'
@@ -100,6 +110,8 @@ export const projects=[
         name:"Weather and AQI Application (Android and Web)",
         desc:'A weather application to get the latest weather and Air Quality Index of any city. Used open sourced APIs to fetch data.',
         stack: ['React.js'],
+        stackImages:['reactjs'],
+
         image:'',
         live:'https://harshu1611.github.io/Weather-Website/',
         github:'https://github.com/harshu1611/Weather-On-Go-Android'
