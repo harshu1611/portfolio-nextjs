@@ -22,5 +22,6 @@ model Projects{
   image       String
   github      String
   live        String? 
+  createdAt   DateTime @default(now())
 
 }
