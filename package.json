@@ -13,6 +13,7 @@
     "@nextui-org/react": "^2.4.8",
     "@nextui-org/switch": "^2.0.34",
     "@prisma/client": "^6.1.0",
+    "cloudinary": "^2.5.1",
     "framer-motion": "^11.5.4",
     "next": "14.2.8",
     "next-themes": "^0.3.0",

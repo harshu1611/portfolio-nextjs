@@ -1,25 +1,24 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import path from "path";
 import { writeFile } from "fs/promises";
+import {v2 as cloudinary} from 'cloudinary'
 
-export const POST = async (req:any, res:any) => {
-  const formData = await req.formData();
+export const POST = async (req:NextRequest) => {
+  const {url} = await req.json()
 
-  const file = formData.get("file");
-  const fileNameNew= formData.get("fileName");
-  if (!file) {
-    return NextResponse.json({ error: "No files received." }, { status: 400 });
-  }
+  cloudinary.config({
+    cloud_name:process.env.CLOUDINARY_CLOUD_NAME,
+    api_key:process.env.CLOUDINARY_API_KEY,
+    api_secret:process.env.CLOUDINARY_API_SECRET
+  })
+  const uploadResult = await cloudinary.uploader
+       .upload(
+           url
+       )
+       .catch((error) => {
+           console.log(error);
+       });
+    
+  return NextResponse.json({status:200, url:uploadResult?.url})
 
-  const buffer = Buffer.from(await file.arrayBuffer());
-  try {
-    await writeFile(
-      path.join(process.cwd(), "public/images/" + fileNameNew),
-      Uint8Array.from(buffer)
-    );
-    return NextResponse.json({ Message: "Success", status: 201 });
-  } catch (error) {
-    console.log("Error occured ", error);
-    return NextResponse.json({ Message: "Failed", status: 500 });
-  }
 };
